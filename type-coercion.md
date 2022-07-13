@@ -2,7 +2,7 @@ Type coercion
 ================
 Naomi Ekas
 
-\##Exercise 1
+## Exercise 1
 
 -   `c(1, 1L, "C")`
 
@@ -14,7 +14,9 @@ c(1, 1L, "C")
 
     ## [1] "1" "1" "C"
 
-\##Exercise 2 1 is a double 1L is an integer “c” is a character
+## Exercise 2
+
+1 is a double 1L is an integer “c” is a character
 
 ``` r
 1
@@ -34,7 +36,7 @@ c(1, 1L, "C")
 
     ## [1] "C"
 
-\#Exercise 3
+## Exercise 3
 
 all of these will come out as character
 
@@ -44,7 +46,9 @@ typeof(c(1, 1L, "C"))
 
     ## [1] "character"
 
-\#Exercise 4 - `c(1L / 0, "A")` all of these will be a character
+## Exercise 4
+
+-   `c(1L / 0, "A")` all of these will be a character
 
 ``` r
 c(1L / 0, "A")
@@ -52,7 +56,9 @@ c(1L / 0, "A")
 
     ## [1] "Inf" "A"
 
-\#Exercise 5 integer double character character
+## Exercise 5
+
+integer double character character
 
 ``` r
 typeof(1L)
@@ -80,7 +86,9 @@ typeof("A")
 
 I was wrong on the double
 
-\#Exercise 6 all will be Characters
+## Exercise 6
+
+all will be Characters
 
 ``` r
 typeof(c(1L / 0, "A"))
@@ -88,7 +96,9 @@ typeof(c(1L / 0, "A"))
 
     ## [1] "character"
 
-\#Exercise 7 - `c(1:3, 5)`
+## Exercise 7
+
+-   `c(1:3, 5)`
 
 ``` r
 c(1:3, 5)
@@ -96,7 +106,7 @@ c(1:3, 5)
 
     ## [1] 1 2 3 5
 
-\#Exercise 8
+## Exercise 8
 
 ``` r
 typeof(1:3)
@@ -110,7 +120,7 @@ typeof(5)
 
     ## [1] "double"
 
-\#Exercise 9
+## Exercise 9
 
 ``` r
 typeof(c(1:3, 5))
@@ -118,7 +128,9 @@ typeof(c(1:3, 5))
 
     ## [1] "double"
 
-\#Exercise 10 - `c(3, "3+")`
+## Exercise 10
+
+-   `c(3, "3+")`
 
 ``` r
 c(3, "3+")
@@ -126,7 +138,7 @@ c(3, "3+")
 
     ## [1] "3"  "3+"
 
-\#Exercise 11
+## Exercise 11
 
 ``` r
 typeof(3)
@@ -140,13 +152,15 @@ typeof("3+")
 
     ## [1] "character"
 
-\#Exercise 12
+## Exercise 12
 
 ``` r
 #typeof(c(3, "3+"))
 ```
 
-\#Exercise 13 - `c(NA, TRUE)`
+## Exercise 13
+
+-   `c(NA, TRUE)`
 
 ``` r
 c(NA, TRUE)
@@ -154,7 +168,9 @@ c(NA, TRUE)
 
     ## [1]   NA TRUE
 
-\#Exercise 14 logical
+## Exercise 14
+
+logical
 
 ``` r
 typeof(NA)
@@ -168,7 +184,7 @@ typeof(TRUE)
 
     ## [1] "logical"
 
-\#Exercise 15
+## Exercise 15
 
 ``` r
 typeof(c(NA, TRUE))
