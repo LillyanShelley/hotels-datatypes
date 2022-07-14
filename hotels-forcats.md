@@ -1,6 +1,6 @@
 Hotel bookings - factors
 ================
-Naomi Ekas
+Lillyan Shelley
 
 ``` r
 library(tidyverse)
@@ -27,6 +27,7 @@ inspiration and help.
 
 ``` r
 hotels %>%
+  mutate(arrival_date_month = fct_relevel(arrival_date_month, month.name)) %>% 
   group_by(hotel, arrival_date_month) %>%   # group by hotel type and arrival month
   summarize(mean_adr = mean(adr)) %>%       # calculate mean adr for each group
   ggplot(aes(
